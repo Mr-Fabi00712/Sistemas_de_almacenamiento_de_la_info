@@ -16,7 +16,7 @@ Normaliza la tabla Alquileres para que cumpla con 1FN, 2FN y 3FN. Identifica las
 
 ## Primera forma Normal (1FN)
 
-Cada campo debe contener solo un valor atómico. Descompondremos los campos Vehiculos y PrecioVehiculos.
+Para que la tabla esté en 1FN, todos los valores deben ser atómicos, es decir, no debe haber listas o conjuntos de valores en un solo campo. En este caso, la tabla __vehiculos__ no está atomizada.
 
 + Nueva Tabla __Alquileres__:
   
@@ -33,7 +33,9 @@ Cada campo debe contener solo un valor atómico. Descompondremos los campos Vehi
 
 ## Segunda forma normal (2FN)
 
-Eliminar dependencias parciales. Separamos los datos de los clientes.
+Eliminar dependencias parciales. 
+
+En este caso, __ClienteNombre__ depende de __ClienteID__ y __PrecioVehiculos__ depende de __Vehiculos__.
 
 + Nueva tabla __Clientes__:
 
@@ -56,7 +58,9 @@ Eliminar dependencias parciales. Separamos los datos de los clientes.
 
 ## 3FN (Tercera Forma Normal)
 
-Eliminamos dependencias transitivas.
+La tabla debe estar en 2FN y no debe haber dependencias transitivas. Un atributo no clave no debe depender de otro atributo no clave.
+
+__Dependencias transitivas eliminadas:__ Ya no hay dependencias transitivas en la estructura actual. ClienteNombre está en una tabla separada (Clientes), y Precio está en la tabla Vehiculos.
 
 + Nueva tabla Alquileres final:
 

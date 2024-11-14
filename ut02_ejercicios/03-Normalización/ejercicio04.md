@@ -20,7 +20,11 @@ La tabla ya está en 1FN, pues todos los valores son atómicos.
 
 ## Segunda forma normal (2FN)
 
-Eliminar dependencias parciales.
+Eliminar dependencias parciales. En este caso:
+
+ClienteNombre depende de ClienteID.
+
+ProductoNombre y PrecioUnitario dependen de ProductoID.
 
 + Nueva tabla __Clientes__:
 
@@ -41,7 +45,7 @@ Eliminar dependencias parciales.
 
 ## Tercera forma normal (3FN)
 
-Eliminamos dependencias transitivas.
+Dependencias transitivas eliminadas: Las tablas Clientes y Productos eliminan las dependencias transitivas, ya que los atributos ClienteNombre, ProductoNombre y PrecioUnitario están en sus propias tablas.
 
 + Nueva tabla __Pedidos__ final:
 
