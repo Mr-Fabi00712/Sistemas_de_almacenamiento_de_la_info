@@ -14,11 +14,11 @@ Normaliza la tabla Pedidos para que cumpla con 1FN, 2FN y 3FN. Identifica las de
 
 + ProductoID → ProductoNombre, PrecioUnitario
 
-## Primera forma normal (1FN)
+## Primera Forma Normal (1FN)
 
 La tabla ya está en 1FN, pues todos los valores son atómicos.
 
-## Segunda forma normal (2FN)
+## Segunda Forma Normal (2FN)
 
 Eliminar dependencias parciales. En este caso:
 
@@ -43,7 +43,7 @@ ProductoNombre y PrecioUnitario dependen de ProductoID.
 |1003|Bolígrafo|0.8|
 |1004|Borrador|0.3|
 
-## Tercera forma normal (3FN)
+## Tercera Forma Normal (3FN)
 
 Dependencias transitivas eliminadas: Las tablas Clientes y Productos eliminan las dependencias transitivas, ya que los atributos ClienteNombre, ProductoNombre y PrecioUnitario están en sus propias tablas.
 

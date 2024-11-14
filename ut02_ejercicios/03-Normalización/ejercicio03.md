@@ -56,7 +56,7 @@ En este caso, __ClienteNombre__ depende de __ClienteID__ y __PrecioVehiculos__ d
 |4|Pickup|65|
 |5|Van|60|
 
-## 3FN (Tercera Forma Normal)
+## Tercera Forma Normal (3FN)
 
 La tabla debe estar en 2FN y no debe haber dependencias transitivas. Un atributo no clave no debe depender de otro atributo no clave.
 

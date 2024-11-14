@@ -8,3 +8,25 @@ Normaliza la tabla CursosEstudiantes para que cumpla con 1FN, 2FN y 3FN. Identif
 
 ## Dependencias funcionales
 
+RegistroID → EstudianteID
+
+EstudianteID → NombreEstudiante → Cursos → Profesor → Notas → Departamento
+
+## Primera Forma Normal
+
+La tabla debe contener solo valores atómicos, por lo que los campos con listas deben dividirse. Como se puede ver en la tabla Cursos y Notas contienen dos valores, así que, creamos una Tabla llamada __CursosNotas__:
+
+|RegistroID|EstudianteID|NombreEstudiante|Curso|Profesor|Nota|Departamento|
+|-----|------|-----|-----|-----|------|-------|
+|1|201|Alicia|Matemáticas|"Dr.Pérez"|85|Ciencias|
+|1|201|Alicia|Física|"Dr.Pérez"|90|Ciencias|
+|2|202|Roberto|Matemáticas|"Dr.Pérez"|78|Ciencias|
+|2|202|Roberto|Química|"Dr.Pérez"|88|Ciencias|
+|3|203|Julia|Historia|"Dr.Gómez"|92|Humanidades|
+|3|203|Julia|Literatura|"Dr.Gómez"|80|Humanidades|
+|4|204|Mario|Química|"Dr.Pérez"|75|Ciencias|
+
+## Segunda Forma Normal (2FN)
+
+
+## Tercera Forma Normal (3FN)
