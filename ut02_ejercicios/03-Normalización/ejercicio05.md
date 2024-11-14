@@ -28,5 +28,14 @@ La tabla debe contener solo valores atómicos, por lo que los campos con listas 
 
 ## Segunda Forma Normal (2FN)
 
+La tabla debe estar en 1FN y no debe tener dependencias parciales. Los atributos no clave deben depender de toda la clave primaria.
+
+__Dependencias parciales:__
+
++ _NombreEstudiante_ depende de _EstudianteID_.
+
++ _Departamento_ depende de _Curso_.
+
+
 
 ## Tercera Forma Normal (3FN)
