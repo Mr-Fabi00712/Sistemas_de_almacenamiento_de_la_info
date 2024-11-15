@@ -38,4 +38,53 @@ __Dependencias parciales:__
 
 
 
-## Tercera Forma Normal (3FN)
+Creamos la tabla __Estudiantes__:
+
+| EstudianteID | NombreEstudiante | 
+|--------------|------------------| 
+| 201 | Alicia | 
+| 202 | Roberto | 
+| 203 | Julia | 
+| 204 | Mario |
+
+
+
+Creamos la tabla __Cursos__:
+
+| CursoID | Curso | Departamento | 
+|---------|-------------|--------------| 
+| 1 | Matemáticas | Ciencias | 
+| 2 | Física | Ciencias | 
+| 3 | Química | Ciencias | 
+| 4 | Historia | Humanidades |
+| 5 | Literatura | Humanidades |
+
+
+
+ ## Tercera Forma Normal (3FN)
+
+La tabla debe estar en 2FN y no debe tener dependencias transitivas. Un atributo no clave no debe depender de otro atributo no clave.
+Dependencias transitivas eliminadas:
+__Profesor__ depende de __Curso__.
+
+Creamos la tabla Profesores:
+
+| CursoID | Profesor | 
+|---------|-------------| 
+| 1 | Dr. Pérez |
+| 2 | Dr. Pérez | 
+| 3 | Dr. Pérez | 
+| 4 | Dr. Gómez | 
+| 5 | Dr. Gómez |
+
+Tabla final RegistroCursos:
+
+| RegistroID | EstudianteID | CursoID | Nota |
+|---------|-------------|---------|-------------| 
+|1 |201 |1 |85 |
+|1 |201 |2 |90 |
+|2 |202 |1 |78 |
+|2 |202 |3 |88 |
+|3 |203 |4 |92 |
+|3 |203 |5 |80 |
+|4 |204 |3 |75 |
