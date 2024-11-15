@@ -64,10 +64,14 @@ Creamos la tabla __Cursos__:
  ## Tercera Forma Normal (3FN)
 
 La tabla debe estar en 2FN y no debe tener dependencias transitivas. Un atributo no clave no debe depender de otro atributo no clave.
-Dependencias transitivas eliminadas:
+
+
+__Dependencias transitivas eliminadas__:
+
+
 __Profesor__ depende de __Curso__.
 
-Creamos la tabla Profesores:
++ Creamos la tabla Profesores:
 
 | CursoID | Profesor | 
 |---------|-------------| 
@@ -77,7 +81,7 @@ Creamos la tabla Profesores:
 | 4 | Dr. Gómez | 
 | 5 | Dr. Gómez |
 
-Tabla final RegistroCursos:
++ Tabla final RegistroCursos:
 
 | RegistroID | EstudianteID | CursoID | Nota |
 |---------|-------------|---------|-------------| 
