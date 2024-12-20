@@ -5,5 +5,5 @@
 - Comando:
 
 ```
-
+SHOW VARIABLES;
 ```

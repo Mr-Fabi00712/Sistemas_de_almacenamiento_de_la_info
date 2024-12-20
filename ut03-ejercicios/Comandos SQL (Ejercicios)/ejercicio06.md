@@ -5,5 +5,5 @@
 - Comando:
 
 ```
-
+SHOW VARIABLES LIKE 'bind_address';
 ```

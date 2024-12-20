@@ -5,5 +5,5 @@
 - Comando:
 
 ```
-
+SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
