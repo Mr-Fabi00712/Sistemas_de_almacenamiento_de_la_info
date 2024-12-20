@@ -4,7 +4,13 @@
 
 Nota: hay que generar dos consultas: una por cada pregunta.
 
-- Comando:
+- Comando 1:
+
+```
+
+```
+
+- Comando 2:
 
 ```
 

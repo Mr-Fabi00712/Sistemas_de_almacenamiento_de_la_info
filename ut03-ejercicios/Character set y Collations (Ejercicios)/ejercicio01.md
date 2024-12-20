@@ -5,5 +5,5 @@
 - Comando:
 
 ```
-
+SHOW CHARACTER SET LIKE '%utf%';
 ```
